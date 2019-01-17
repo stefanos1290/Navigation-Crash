@@ -2,18 +2,18 @@
   "data": [
   	{
   		"title" : "Oceansound",
-  		"audio": "https://github.com/Learnfield-GmbH/CodingChallange/raw/master/data/Oceansound.mp3",
-  		"cover": "https://github.com/Learnfield-GmbH/CodingChallange/raw/master/data/Oceansound.png"
+  		"audio": "https://raw.githubusercontent.com/Learnfield-GmbH/CodingChallange/master/data/Oceansound.mp3",
+  		"cover": "https://raw.githubusercontent.com/Learnfield-GmbH/CodingChallange/master/data/Oceansound.png"
   	},
   	{
   		"title" : "Nightlife",
-  		"audio": "https://github.com/Learnfield-GmbH/CodingChallange/raw/master/data/Nightlife.mp3",
-  		"cover": "https://github.com/Learnfield-GmbH/CodingChallange/raw/master/data/Nightlife.png"
+  		"audio": "https://raw.githubusercontent.com/Learnfield-GmbH/CodingChallange/master/data/Nightlife.mp3",
+  		"cover": "https://raw.githubusercontent.com/Learnfield-GmbH/CodingChallange/master/data/Nightlife.png"
   	},
   	{
   		"title" : "Waking Me",
-  		"audio": "https://github.com/Learnfield-GmbH/CodingChallange/raw/master/data/Waking_Me.mp3",
-  		"cover": "https://github.com/Learnfield-GmbH/CodingChallange/raw/master/data/Waking_Me.png"
+  		"audio": "https://raw.githubusercontent.com/Learnfield-GmbH/CodingChallange/master/data/Waking_Me.mp3",
+  		"cover": "https://raw.githubusercontent.com/Learnfield-GmbH/CodingChallange/master/data/Waking_Me.png"
   	}
   ]
 }
