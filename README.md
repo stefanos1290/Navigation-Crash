@@ -6,8 +6,6 @@
 - Supply clean, readable automated testing 
   - Definitely unit and potentially integration / ui tests
 - Supply build / make / run instructions if required
-- Use a git repostitory and highlight significant working steps appropriately
-  - Push it to github and give us access
 
 ## The exercise
 
