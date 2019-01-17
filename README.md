@@ -4,7 +4,7 @@
 
 - Supply clean code (e.g. SOLID principles, etc)
 - Supply clean, readable automated testing 
-  - Definitely unit and potentially integration / ui tests
+  - Definitely unit and potentially other test layers you consider useful
 - Supply build / make / run instructions if required
 
 ## The exercise
