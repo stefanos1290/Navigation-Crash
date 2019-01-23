@@ -3,17 +3,20 @@
   	{
   		"title" : "Oceansound",
   		"audio": "https://raw.githubusercontent.com/Learnfield-GmbH/CodingChallange/master/data/Oceansound.mp3",
-  		"cover": "https://raw.githubusercontent.com/Learnfield-GmbH/CodingChallange/master/data/Oceansound.png"
+			"cover": "https://raw.githubusercontent.com/Learnfield-GmbH/CodingChallange/master/data/Oceansound.png",
+			"totalDurationMs": 14448
   	},
   	{
   		"title" : "Nightlife",
   		"audio": "https://raw.githubusercontent.com/Learnfield-GmbH/CodingChallange/master/data/Nightlife.mp3",
-  		"cover": "https://raw.githubusercontent.com/Learnfield-GmbH/CodingChallange/master/data/Nightlife.png"
+			"cover": "https://raw.githubusercontent.com/Learnfield-GmbH/CodingChallange/master/data/Nightlife.png",
+			"totalDurationMs": 15969
   	},
   	{
   		"title" : "Waking Me",
   		"audio": "https://raw.githubusercontent.com/Learnfield-GmbH/CodingChallange/master/data/Waking_Me.mp3",
-  		"cover": "https://raw.githubusercontent.com/Learnfield-GmbH/CodingChallange/master/data/Waking_Me.png"
+			"cover": "https://raw.githubusercontent.com/Learnfield-GmbH/CodingChallange/master/data/Waking_Me.png",
+			"totalDurationMs": 13776
   	}
   ]
 }
