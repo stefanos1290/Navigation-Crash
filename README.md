@@ -8,7 +8,7 @@
 - Supply build / make / run instructions if required
 - Preferably, provide the code in a Git repository
 
-## The react native challenges
+## The React Native challenges
 
 1. [Sequencer](native/sequencer/README.md)
 
