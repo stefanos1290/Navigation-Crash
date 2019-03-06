@@ -1,6 +1,6 @@
 # Sequencer
 
-This is Skoove's coding challenge for iOS native (Swift/ObjC) development.
+This is Skoove's coding challenge for mobile native development.
 
 Your job is to implement a miniature audio loop app, the focus is on keeping various audible and visible elements in sync.
 
@@ -16,15 +16,15 @@ There are two audio players, A and B, each one is loaded with an audio file of e
 
 [Sequencer mockup]: mockup.jpg
 
-There is a single play/pause/reset button. When pressed during the paused state, it starts/resumes playback from the current position (new state is 'playing') for both players. Both players indicate the position of the current playhead with a vertical bar. When the play/pause/reset button is pressed briefly in the playing state, playback is paused for both players. When pressed for long (>2s) in the playing state, playback is paused and the current position reset to 0 (reset).
+There is a single play/pause/reset button (in the middle of the central control panel). When pressed during the paused state, it starts/resumes playback from the current position (new state is 'playing') for both players. Both players indicate the position of the current playhead with a vertical bar. When the play/pause/reset button is pressed briefly in the playing state, playback is paused for both players. When pressed for long (>2s) in the playing state, playback is paused and the current position reset to 0 (reset).
 
-Underneath the controls the absolute musical time is shown (MTI - Musical time indicator). The format for musical time is `bar:beat:sixteenths`. Each bar consists of 4 beats. Each beat consists of 4 sixteenths. Each point in musical time can be expressed with these components, with our components starting at 0. E.g. `2:1:2` means the third bar, and the third sixteenth after the second beat of the bar. Broken down to sixteenths only it's `38` (`2*16 + 1*4 + 2*1`). With a BPM of `125` this leads to the time of `4560ms`.
+Underneath the controls the absolute musical time is shown (MTI - Musical time indicator). The format for musical time is `bar:beat:sixteenths`. Each bar consists of 4 beats. Each beat consists of 4 sixteenths. Each point in musical time can be expressed with these components, with our components starting at 0. Starting at 0:0:0, the next sixteenth is 0:0:1; after 0:0:3 comes 0:1:0 (second beat), after 0:3:3 (last sixteenth of the first bar) comes 1:0:0 (first beat of the second bar). A conversion from ms requires knowing the bpm (beats per minute) which in our example is 125.
 
 The MTI keeps increasing as long as the app is in playing state and is not reset. An exception to this is microloops (see below).
 
-A metronome LED component simply flashes for `100ms` on a specific musical time event. The left one should flash on each `bar` while the right one flashes on each `beat`.
+A metronome LED component (to the right of the play/pause/reset button) simply flashes for `100ms` on a specific musical time event. The left one should flash on each `bar` while the right one flashes on each `beat`.
 
-In normal playback, the audio players will loop the currently loaded audio file indefinitely. However, by pressing the 'next file' (fast forward icon) button underneath one player, the next audio file is enqueued for that player, i.e. the current file will play to the end, and then the next audio file is loaded as the current one and played back. There should be no audible gap between the two files, and both players' playheads should remain in sync with each other. The next file button should indicate that it has been pressed while waiting for the next file to start. The state indicator is cleared at the moment when the next file is actually loaded.
+In normal playback, the audio players will loop the currently loaded audio file indefinitely. However, by pressing the 'next file' (fast forward icon) button underneath one player, the next audio file is enqueued for that player, i.e. the current file will play to the end, and then the next audio file is loaded as the current one and played back. There should be no audible gap between the two files, and both players' playheads should remain in sync with each other. The next file button should indicate that it has been pressed while waiting for the next file to start. The state indicator is cleared at the moment when the next file is actually loaded. The next file after A3 is considered to be A1, the same for B3/B1. When pressing reset, the current files remain, they are not reverted to A1/B1.
 
 To communicate the audio file change, each audio file is associated with a waveform image (jpg) that should be displayed underneath the visible playhead whenever this audio file is played.
 
