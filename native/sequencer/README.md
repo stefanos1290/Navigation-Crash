@@ -4,6 +4,8 @@ This is Skoove's coding challenge for mobile native development.
 
 Your job is to implement a miniature audio loop app, the focus is on keeping various audible and visible elements in sync.
 
+The WAV and JPG files referenced here can be found in the data folder in this repo.
+
 ## The following rules apply:
 
 Please read the [root readme file](https://github.com/Learnfield-GmbH/CodingChallenge/blob/master/README.md).
