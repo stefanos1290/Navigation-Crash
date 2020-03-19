@@ -49,8 +49,6 @@ The application consists of several screens that are presented in a specific ord
     - Take into account that the server may respond with errors and varying response durations.
     - Reuse components wherever applicable.
   
-
-
 ## Screen flow diagram
 ![Overview][Overview]
 
@@ -61,3 +59,40 @@ Here is an overview of the separate screens:
 ![Screens][Screens]
 
 [Screens]: screens.png
+
+## Development server
+
+You can find a server in the subfolder `server`. To start the server in a normal operating mode simply execute
+
+```
+npm install
+node server.js
+```
+
+The local machine will serve the following endpoints with randomized delays (between 1 and 15 seconds) and randomized return values (success vs. failure and specific return values):
+
+```
+http://localhost:3000/rLogin
+http://localhost:3000/rFetchExperiments
+http://localhost:3000/rSubmitSelection
+```
+
+### Develoment overrides
+
+If you want to force the server to behave in a specific manner please use the following arguments
+
+```  
+node server.js x y u v a b
+
+  x - override for rLogin delay
+  y - override for rLogin success
+  u - override for rFetchExperiments delay
+  v - override for rFetchExperiments success
+  a - override for rSubmitSelection delay
+  b - override for rSubmitSelection success
+```
+
+As an example `node server.js 3 false 15 true 4 false` will lead to a behavior that
+- every `rLogin` request returns an error after 3 seconds
+- every `rFetchExperiments` request returns successfully after 15 seconds
+- every `rSubmitSelection` request returns an error after 4 seconds
