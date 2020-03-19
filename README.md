@@ -15,3 +15,4 @@
 ## The React Native challenges
 
 1. [Simple audio player](react%20native/simple%20audio%20player/README.md)
+2. [Dynamic Navigation Flow](react%20native/navigation%20flow/README.md)
