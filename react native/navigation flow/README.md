@@ -20,8 +20,8 @@ The application consists of several screens that are presented in a specific ord
 
 1. The app launches
     - Launching the application always triggers `rLogin` which retrieves a `sessionId`.
-    - If the user is a first-time user the app shall present `screenA` to him.
-    - If the user is a returning user the app shall present him the last screen of his previous session.
+    - If the user is a first-time user the app shall present `screenA`.
+    - If the user is a returning user the app shall present the last screen of his previous session.
 
 2. Screen A 
     - If user enters `screenA` the app has to fetch `rFetchExperiments` unless the result was already fetched and presisted once successfully.
