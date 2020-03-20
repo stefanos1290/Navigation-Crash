@@ -58,7 +58,7 @@ function processRequest(type, result, delayOverride, successOverride, successBlo
 // Configure rLogin
 server.get("/rLogin", (request, result, next) => {
   processRequest('/rLogin', result, rLoginDelayOverride, rLoginSuccessOverride, () => {
-    result.json(uuidv4());
+    result.json({ sessionId: uuidv4() });
   });
 });
 
