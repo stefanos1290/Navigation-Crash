@@ -37,6 +37,7 @@ The application consists of several screens that are presented in a specific ord
 4. Screen C
     - Both `screenCx` should be visible for 3 seconds minimum
     - Both `screenCx` should automatically navigate to `screenD` when `rLogin` was successful
+    - Both `screenCx` show the selection of the `screenBx`. If the path went through `screenB3` please leave the field blank and stretch the text field below towards the top with similar margins.
 
 5. Screen D
     - This screen does not have any interactive / automated behavior except the generic back button
