@@ -45,6 +45,8 @@ The application consists of several screens that are presented in a specific ord
 6. General
     - Some screens support a back button.
     - `rLogin` should have a retry logic (the other requests should fail after 1 try)
+    - Contents of the the large text fields can be any lorem ipsum text
+    - The background colors of the screens doesn't have to match the exact rgb codes from the diagram.
 
 7. Tips
     - Take into account that the server may respond with errors and varying response durations.
