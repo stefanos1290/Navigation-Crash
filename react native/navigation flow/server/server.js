@@ -72,7 +72,7 @@ server.get('/rFetchExperiments', (request, result, next) => {
 
 // Configure rSubmitSelection
 server.get('/rSubmitSelection', (request, result, next) => {
-  processRequest('/rFetchExperiments', result, rSubmitSelectionDelayOverride, rSubmitSelectionSuccessOverride, () => {
+  processRequest('/rSubmitSelection', result, rSubmitSelectionDelayOverride, rSubmitSelectionSuccessOverride, () => {
     result.status(200).send();
   });
 });
