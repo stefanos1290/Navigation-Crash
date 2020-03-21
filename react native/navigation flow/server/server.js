@@ -12,7 +12,7 @@ const rSubmitSelectionSuccessOverride = args[5];
 
 // Random value helper
 function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max + 1));
+  return Math.floor(Math.random() * Math.floor(max));
 };
 
 // Uuid generater
@@ -43,7 +43,7 @@ server.listen(3000, () => {
 
 // Resolving helper
 function processRequest(type, result, delayOverride, successOverride, successBlock) {
-  const delaySeconds = (typeof delayOverride === 'string') ? parseInt(delayOverride) : getRandomInt(15);
+  const delaySeconds = (typeof delayOverride === 'string') ? parseInt(delayOverride) : getRandomInt(16);
   const success = (typeof successOverride === 'string') ? (successOverride === 'true' ? true : false) : getRandomInt(1) === 1;
   console.log(`==> Handling '${type}' with delay of '${delaySeconds}' seconds and success '${success ? 'true' : 'false'}'`)
   setTimeout(() => {
