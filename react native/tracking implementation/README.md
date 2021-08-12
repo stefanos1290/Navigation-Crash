@@ -25,7 +25,7 @@ of this exercise is to **answer** as much as possible from the following questio
     - How many users have been acquired from `[your_name]_LAT_enabled` campaign
     - How many users have been acquired from `[your_name]_LAT_disabled` campaign
     
-#### Results
+### Results
 
 of this exercise should be delivered in two ways:
 1. a GitHub branch with your implementation
@@ -41,7 +41,7 @@ https://eu.mixpanel.com/report/2384517). The keys that you will need for develop
     - Api Secret: `370434c4457820412dc709e5c34e76ba`
 
 - **AppsFlyer**: likewise you should have already received an invitation to it. The project that you will be working with has the name ["SkooveDevelop"](
-https://eu.mixpanel.com/report/2384517). The keys that you will need for development are:
+https://hq1.appsflyer.com/unified-ltv/dashboard/id1430088267). The keys that you will need for development are:
     - Development Key: `nVxwjFVbTkzsgjosRnYMGZ`
     - App ID: `1430088267`
 
@@ -54,7 +54,5 @@ https://eu.mixpanel.com/report/2384517). The keys that you will need for develop
   * `cd tracking\ implementation/ && npx react-native run-android`
 
 - iOS:
-  * `cd tracking\ implementation/ && npx react-native run-ios`
-    - or -
-  * Open `tracking\ implementation/ios/skoovesCodingChallenge.xcworkspace` in Xcode or run `xed -b ios`
-  * Hit the Run button
+  * `cd tracking\ implementation/ && npx react-native run-ios` ***or*** open `tracking\ implementation/ios/skoovesCodingChallenge.xcworkspace` in Xcode ***or*** run `xed -b ios`
+  * Click on the Run button
