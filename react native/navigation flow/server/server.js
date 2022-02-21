@@ -24,7 +24,7 @@ function uuidv4() {
 };
 
 // Available routes
-const screensInExperiment = ["screenB1", "screenB2", "screenB3", "screenB4"];
+const screensInExperiment = ["screenB1", "screenB2", "screenB3", "noScreenB"];
 
 // Start server
 server.listen(3000, () => {

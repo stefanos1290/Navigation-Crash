@@ -51,17 +51,18 @@ The application consists of several screens that are presented in a specific ord
 7. Tips
     - Take into account that the server may respond with errors and varying response durations.
     - Reuse components wherever applicable.
+    - `noScreenB` is a scenario, where no screen is shown. That means it navigates directly from `screenA` to `screenB`
   
 ## Screen flow diagram
 ![Overview][Overview]
 
-[Overview]: overview.png
+[Overview]: assets/ScreenFlow.drawio.png
 
 ## Screen overview
 Here is an overview of the separate screens:
 ![Screens][Screens]
 
-[Screens]: screens.png
+[Screens]: assets/Screens.png
 
 ## Development server
 
