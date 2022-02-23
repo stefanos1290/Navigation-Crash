@@ -1,6 +1,6 @@
 # Dynamic Navigation Flow
 
-This is one of Skoove's mobile development coding channenges.
+This is one of Skoove's mobile development coding challenges.
 
 Your task is to develop an application with a dynamic navigation flow depending on external results & delays.
 
