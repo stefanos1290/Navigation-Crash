@@ -51,7 +51,7 @@ The application consists of several screens that are presented in a specific ord
 7. Tips
     - Take into account that the server may respond with errors and varying response durations.
     - Reuse components wherever applicable.
-    - `noScreenB` is a scenario, where no screen is shown. That means it navigates directly from `screenA` to `screenB`
+    - `noScreenB` is a scenario, where no screen is shown. That means it navigates directly from `screenA` to `screenC2`
   
 ## Screen flow diagram
 ![Overview][Overview]
