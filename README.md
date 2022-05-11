@@ -12,6 +12,7 @@
 ## The iOS Native (Swift/ObjC) challenges
 
 1. [Sequencer](native/sequencer/README.md)
+2. [Dynamic Navigation Flow](react%20native/navigation%20flow/README.md)
 
 ## The React Native challenges
 
