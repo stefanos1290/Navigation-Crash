@@ -49,3 +49,4 @@ Your test should report any resource references in the activity YML files where 
 
 For localized resources, you only need to check the corresponding `en`, since the existing test already checks that the other locales are complete.
 
+The data was designed manually such that there should be no consistency errors in the step 4516 (but human error is possible); in step 4519 there are many errors.
