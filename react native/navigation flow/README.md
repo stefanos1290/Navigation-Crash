@@ -24,7 +24,7 @@ The application consists of several screens that are presented in a specific ord
     - If the user is a returning user the app shall present the last screen of his previous session.
 
 2. Screen A 
-    - If user enters `screenA` the app has to fetch `rFetchExperiments` unless the result was already fetched and presisted once successfully.
+    - If user enters `screenA` the app has to fetch `rFetchExperiments` unless the result was already fetched and presisted successfully.
     - The result of `rFetchExperiments` leads to a specific `screenBx` screen.
 
 3. Screen B
@@ -33,6 +33,7 @@ The application consists of several screens that are presented in a specific ord
         - `screenB1` leads to `screenC1` 
         - `screenB2` leads to `screenC2`
     - `screenB3` does not execute any requests and leads to `screenC2` via the next button
+    - `noScreenB` is a scenario, where no screen is shown. That means it navigates directly from `screenA` to `screenC2`
 
 4. Screen C
     - Both `screenCx` should be visible for 3 seconds minimum
@@ -40,18 +41,19 @@ The application consists of several screens that are presented in a specific ord
     - Both `screenCx` show the selection of the `screenBx`. If the path went through `screenB3` please leave the field blank and stretch the text field below towards the top with similar margins.
 
 5. Screen D
-    - This screen does not have any interactive / automated behavior except the generic back button
+    - This screen does not have any interactive / automated behavior nor does it offer a back button
 
 6. General
-    - Some screens support a back button.
+    - Some screens support a back button, some don't.
     - `rLogin` should have a retry logic (the other requests should fail after 1 try)
     - Contents of the the large text fields can be any lorem ipsum text
     - The background colors of the screens doesn't have to match the exact rgb codes from the diagram.
 
 7. Tips
+    - It is recommended to start the development of the mobile application with the network connectivity being hidden behind an abstraction layer and firstly being implemented by a simple, configurable, local mock. Once all functionality is verified with this non-networking implementation, the real network implementation can be added. Please preserve both implementations.
     - Take into account that the server may respond with errors and varying response durations.
     - Reuse components wherever applicable.
-    - `noScreenB` is a scenario, where no screen is shown. That means it navigates directly from `screenA` to `screenC2`
+
   
 ## Screen flow diagram
 ![Overview][Overview]
@@ -64,7 +66,9 @@ Here is an overview of the separate screens:
 
 [Screens]: assets/Screens.png
 
-## Development server
+## Development Server
+
+The server returns information for the requests mentioned above (e.g. `rFetchExperiments`). 
 
 You can find a server in the subfolder `server`. To start the server in a normal operating mode simply execute
 
