@@ -1,6 +1,7 @@
 const express = require("express");
 const server = express();
 
+
 // Extract args
 const args = process.argv.slice(2);
 const rLoginDelayOverride = args[0];
@@ -27,8 +28,8 @@ function uuidv4() {
 const screensInExperiment = ["screenB1", "screenB2", "screenB3", "noScreenB"];
 
 // Start server
-server.listen(3000, () => {
-  console.log("Server listening on port 3000");
+server.listen(3001, () => {
+  console.log("Server listening on port 3001");
   console.log(`\nrLogin:            ${rLoginDelayOverride} / ${rLoginSuccessOverride}`);
   console.log(`rFetchExperiments: ${rFetchExperimentsDelayOverride} / ${rFetchExperimentsSuccessOverride}`);
   console.log(`rSubmitSelection:  ${rSubmitSelectionDelayOverride} / ${rSubmitSelectionSuccessOverride}`);
