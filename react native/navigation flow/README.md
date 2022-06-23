@@ -24,7 +24,7 @@ The application consists of several screens that are presented in a specific ord
     - If the user is a returning user the app shall present the last screen of his previous session.
 
 2. Screen A 
-    - If user enters `screenA` the app has to fetch `rFetchExperiments` unless the result was already fetched and presisted successfully.
+    - If user enters `screenA` the app has to fetch `rFetchExperiments` unless the result was already fetched and persisted successfully.
     - The result of `rFetchExperiments` leads to a specific `screenBx` screen.
 
 3. Screen B
@@ -47,7 +47,7 @@ The application consists of several screens that are presented in a specific ord
     - Some screens support a back button, some don't.
     - `rLogin` should have a retry logic (the other requests should fail after 1 try)
     - Contents of the the large text fields can be any lorem ipsum text
-    - The background colors of the screens doesn't have to match the exact rgb codes from the diagram.
+    - The background colors of the screens don't have to match the exact rgb codes from the diagram.
 
 7. Tips
     - It is recommended to start the development of the mobile application with the network connectivity being hidden behind an abstraction layer and firstly being implemented by a simple, configurable, local mock. Once all functionality is verified with this non-networking implementation, the real network implementation can be added. Please preserve both implementations.
@@ -85,7 +85,7 @@ http://localhost:3000/rFetchExperiments
 http://localhost:3000/rSubmitSelection
 ```
 
-### Develoment overrides
+### Development overrides
 
 If you want to force the server to behave in a specific manner please use the following arguments
 
