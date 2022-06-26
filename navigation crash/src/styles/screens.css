@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.screenA_container,
+.screenB1_container {
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    color: #6d6d71;
+}
+
+.screenB1_container {
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #6d6d71;
+}
+
+.screenA_container {
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+.screenB1_container {
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.screenB1_title,
+.screenC1_title,
+.screenB2_title,
+.screenB3_title,
+.C2_option_text {
+    font-size: 35px;
+}
+
+.option_label {
+    color: #6d6d71;
+}
+
+.nextPage_link,
+.prevPage_link {
+    text-decoration: none;
+    color: white;
+}
+
+.screenC1_container {
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #cecece;
+}
+
+.C1_choice_text {
+    font-size: 35px;
+    color: #cecece;
+}
+
+.C1_message {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.counter {
+    margin-left: 5px;
+    font-size: 30px;
+    color: #a50d82;
+}
+
+.screenC1_container {
+    background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+    font-size: 100px;
+    color: #9b9b9b;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80vw;
+    height: 80vh;
+}
+
+.screenC2_container {
+    background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #9b9b9b;
+}
+
+.screenC2_title {
+    font-size: 35px;
+    color: #9b9b9b;
+}
+
+.screenB2_container {
+    background-image: linear-gradient(to top, #ebc0fd 0%, #d9ded8 100%);
+    color: #757575;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80vw;
+    height: 80vh;
+}
+
+.C2_message {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.screenB3_container {
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    color: #c1c1c1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80vw;
+    height: 80vh;
+    padding: 20px;
+}
+
+.b3_text {
+    font-size: 23px;
+}

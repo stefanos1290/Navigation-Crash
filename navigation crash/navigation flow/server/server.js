@@ -1,6 +1,10 @@
 const express = require("express");
 const server = express();
 
+server.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*"); // update to match the domain you will make the request from
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next()});
 
 // Extract args
 const args = process.argv.slice(2);
@@ -28,8 +32,8 @@ function uuidv4() {
 const screensInExperiment = ["screenB1", "screenB2", "screenB3", "noScreenB"];
 
 // Start server
-server.listen(3001, () => {
-  console.log("Server listening on port 3001");
+server.listen(3000, () => {
+  console.log("Server listening on port 3000");
   console.log(`\nrLogin:            ${rLoginDelayOverride} / ${rLoginSuccessOverride}`);
   console.log(`rFetchExperiments: ${rFetchExperimentsDelayOverride} / ${rFetchExperimentsSuccessOverride}`);
   console.log(`rSubmitSelection:  ${rSubmitSelectionDelayOverride} / ${rSubmitSelectionSuccessOverride}`);
